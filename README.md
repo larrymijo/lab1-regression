@@ -20,12 +20,20 @@ recommend the best model.
 
 | | |
 |---|---|
-| Chosen dataset | _TBD — see [docs/step1-dataset-choice.md](docs/step1-dataset-choice.md)_ |
-| Target variable | _TBD_ |
-| What the target represents | _TBD_ |
+| Chosen dataset | `dataset3-AgriculturalProduction` — see [docs/step1-dataset-choice.md](docs/step1-dataset-choice.md) |
+| Target variable | `Yield` |
+| What the target represents | Tonnes harvested per hectare sown, per state, crop, season and year (India, 1997–2020) |
 
 Candidates: `dataset1-VideoReviews`, `dataset2-SalesTransactions2`,
 `dataset3-AgriculturalProduction`, `dataset4-SalesTransactions1`, `dataset5-AirTravel`.
+
+## How to run
+
+1. Put the Canvas datasets in `data/`, keeping the folder names (`data/dataset3-AgriculturalProduction/archive3/Agricultural Production.csv`).
+2. Open `notebooks/lab1_regression.ipynb`, select the `.venv` kernel, and **Run All**.
+3. A full run takes several minutes (cross-validation and grid search on the random forest). Lower `SAMPLE_SIZE` in the setup cell while experimenting.
+
+Cleaning lives in `src/data.py`, dataset comparison helpers in `src/overview.py`.
 
 ## Setup
 
@@ -56,7 +64,7 @@ nbstripout --install --attributes .gitattributes
 ## Plan
 
 - [x] **Step 0 — Setup:** repo, virtual environment, dependencies
-- [ ] **Step 1 — Choose dataset:** compare all five, pick one, define and explain the target
+- [x] **Step 1 — Choose dataset:** compare all five, pick one, define and explain the target
 - [ ] **Step 2 — Explore:** structure, missing values, duplicates, outliers, target distribution, relationships, observations
 - [ ] **Step 3 — Prepare & split:** clean, define X / y, 80/20 train-test split, preprocessing pipeline
 - [ ] **Step 4 — Models:** baseline + at least two regressors, compared with 5-fold CV on the training set
