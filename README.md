@@ -65,12 +65,12 @@ nbstripout --install --attributes .gitattributes
 
 - [x] **Step 0 — Setup:** repo, virtual environment, dependencies
 - [x] **Step 1 — Choose dataset:** compare all five, pick one, define and explain the target
-- [ ] **Step 2 — Explore:** structure, missing values, duplicates, outliers, target distribution, relationships, observations
-- [ ] **Step 3 — Prepare & split:** clean, define X / y, 80/20 train-test split, preprocessing pipeline
-- [ ] **Step 4 — Models:** baseline + at least two regressors, compared with 5-fold CV on the training set
-- [ ] **Step 5 — Evaluate:** MAE, RMSE, R² on the same test set
-- [ ] **Step 6 — Tune:** GridSearchCV with 5-fold CV, before/after comparison
-- [ ] **Step 7 — Interpret:** feature importance, strengths/weaknesses, recommendation
+- [x] **Step 2 — Explore:** structure, missing values, duplicates, outliers, target distribution, relationships, observations
+- [x] **Step 3 — Prepare & split:** clean, define X / y, 80/20 train-test split, preprocessing pipeline
+- [x] **Step 4 — Models:** baseline + at least two regressors, compared with 5-fold CV on the training set
+- [x] **Step 5 — Evaluate:** MAE, RMSE, R² on the same test set
+- [x] **Step 6 — Tune:** GridSearchCV with 5-fold CV, before/after comparison
+- [x] **Step 7 — Interpret:** feature importance, strengths/weaknesses, recommendation
 - [ ] **Report:** PDF answering the four required questions
 - [ ] **Submit** notebook + PDF on Canvas
 
